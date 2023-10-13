@@ -6,47 +6,89 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
 </head>
-<body>
-    <div class="modal modal-signin position-static d-block bg-secondary py-5" tabindex="-1" role="dialog" id="modalSignin">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content rounded-4 shadow">
-            <div class="modal-header p-5 pb-4 border-bottom-0">
-              <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
-              <h1 class="fw-bold mb-0 fs-2">Sign up for free</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+<div class="container-fluid">
+  <nav class="bg-light navbar-expand-md navbar navbar-dark">
+    <div class="container-fluid">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="Untitled-1.html"><button type="button" class="btn btn-primary">Home</button></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html"
+            ><button type="button" class="btn btn-primary">Catalog</button></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="register.html"
+            ><button type="button" class="btn btn-primary">Register</button></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="signin.html"><button type="button" class="btn btn-primary">SignIn</button></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="checkout.html"
+            ><button type="button" class="btn btn-primary">Checkout</button></a
+          >
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+   
+  
       
-            <div class="modal-body p-5 pt-0">
-              <form class="">
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control rounded-3" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Email address</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input type="password" class="form-control rounded-3" id="floatingPassword" placeholder="Password">
-                  <label for="floatingPassword">Password</label>
-                </div>
-                <button class="w-100 mb-2 btn btn-lg rounded-3 btn-primary" type="submit">Sign up</button>
-                <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
-                <hr class="my-4">
-                <h2 class="fs-5 fw-bold mb-3">Or use a third-party</h2>
-                <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
-                  <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"/></svg>
-                  Sign up with Twitter
-                </button>
-                <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
-                  <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"/></svg>
-                  Sign up with Facebook
-                </button>
-                <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-3" type="submit">
-                  <svg class="bi me-1" width="16" height="16"><use xlink:href="#github"/></svg>
-                  Sign up with GitHub
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
+      <!-- Custom styles for this template -->
+      <link href="signin.css" rel="stylesheet">
+    </head>
+    <div class="container">
+    <body class="text-center">
+      
+  <main style="max-width: 50%;" class="form-signin w-100 m-auto">
+    <form>
+      <h1 class="mt-4 h3 mb-3 fw-normal">Register</h1>
+  
+      <div class="form-floating">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
       </div>
-    
-</body>
+      
+      <div class="form-floating">
+        <input type="Username" class="mt-1 form-control" id="floatingInput" placeholder="Password">
+        <label for="floatingInput">Username</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="mt-1 form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="mt-1 form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Confirm Password</label>
+      </div>
+  
+      <div >
+        <p class="mt-2">How did you hear about us?</p>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" name="flexRadioDefault" id="word" required/>
+        <label for="word" class="form-check-label">Word of Mouth</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" name="flexRadioDefault" id="word" required/>
+        <label for="word" class="form-check-label">Adult Swim</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" name="flexRadioDefault" id="word" required/>
+        <label for="word" class="form-check-label">Reddit</label>
+      </div>
+      <button class="mt-3 w-100 btn btn-lg btn-primary" type="submit">Sign Up</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
+    </form>
+  </main>
+  
+  
+      
+    </body>
+</div>
 </html>
